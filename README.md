@@ -11,34 +11,35 @@ Proposals follow [this process document](https://github.com/WebAssembly/meetings
 
 _These proposals have not yet been merged to the spec. Merged proposals are listed in [Finished Proposals](finished-proposals.md)._
 
-| Proposal                                                   | Champion        |
-| -----------------------------------------------------------| --------------- |
-
-### Phase 4 - Standardize the Feature (WG)
-
 | Proposal                                                   | Champion                 |
-| -----------------------------------------------------------| -------------------------|
+| -----------------------------------------------------------| ------------------------ |
 | [Tail call][tail_call]                                     | Andreas Rossberg         |
 | [Extended Constant Expressions][extended-const]            | Sam Clegg                |
 | [Typed Function References][function_references]           | Andreas Rossberg         |
 | [Garbage collection][garbage_collection]                   | Andreas Rossberg         |
 | [Multiple memories][multi-memory]                          | Andreas Rossberg         |
-| [Threads][threads]                                         | Conrad Watt              |
 | [Relaxed SIMD][relaxed-simd]                               | Marat Dukhan & Zhi An Ng |
 | [Custom Annotation Syntax in the Text Format][annotations] | Andreas Rossberg         |
 | [Branch Hinting][branch-hinting]                           | Yuri Iozzelli            |
+
+### Phase 4 - Standardize the Feature (WG)
+
+| Proposal                                                   | Champion                 |
+| -----------------------------------------------------------| -------------------------|
+| [Threads][threads]                                         | Conrad Watt              |
+| [Exception handling][exception_handling]                   | Heejin Ahn & Ben Titzer  |
+| [JS String Builtins][js-string-builtins]                   | Ryan Hunt                |
+| [Memory64][memory64]                                       | Sam Clegg                |
 
 ### Phase 3 - Implementation Phase (CG + WG)
 
 | Proposal                                                   | Champion                             |
 | -----------------------------------------------------------| ------------------------------------ |
-| [Memory64][memory64]                                       | Sam Clegg                            |
-| [Exception handling][exception_handling]                   | Heejin Ahn & Ben Titzer              |
 | [Web Content Security Policy][content-security-policy]     | Francis McCabe                       |
-| [JS Promise Integration][js-promise-integration]           | Ross Tate and Francis McCabe         |
+| [JS Promise Integration][js-promise-integration]           | Francis McCabe                       |
 | [Type Reflection for WebAssembly JavaScript API][js-types] | Ilya Rezvov                          |
 | [ESM Integration][ecmascript_module_integration]           | Asumu Takikawa, Ms2ger & Guy Bedford |
-| [JS String Builtins][js-string-builtins]                   | Ryan Hunt                            |
+| [Wide Arithmetic][wide-arithmetic]                         | Alex Crichton and Jamey Sharp        |
 
 ### Phase 2 - Proposed Spec Text Available (CG + WG)
 
@@ -48,6 +49,10 @@ _These proposals have not yet been merged to the spec. Merged proposals are list
 | [Numeric Values in WAT Data Segments][numeric-values-in-wat]   | Ezzat Chamudi                |
 | [Instrument and Tracing Technology][instrument-tracing]        | Richard Winterton            |
 | [Extended Name Section][extended-name-section]                 | Ashley Nelson                |
+| [Custom Page Sizes][custom-page-sizes]                         | Nick Fitzgerald              |
+| [Stack Switching][stack-switching]                             | Francis McCabe & Sam Lindley |
+| [Rounding Variants][rounding-mode-control]                     | Kloud Koder                  |
+| [Compilation Hints][compilation-hints]                         | Emanuel Ziegler              |
 
 ### Phase 1 - Feature Proposal (CG)
 
@@ -58,23 +63,22 @@ _These proposals have not yet been merged to the spec. Merged proposals are list
 | [WebAssembly C and C++ API][wasm_c_api]                | Andreas Rossberg                                                                  |
 | [Flexible Vectors][flexible-vectors]                   | Petr Penzin & Tal Garfinkel                                                       |
 | [Call Tags][call-tags]                                 | Ross Tate                                                                         |
-| [Stack Switching][stack-switching]                     | Francis McCabe & Sam Lindley                                                      |
 | [Constant Time][constant-time]                         | Sunjay Cauligi, Garrett Gu, John Renner, Hovav Shacham, Deian Stefan, Conrad Watt |
 | [JS Customization for GC Objects][gc-js-customization] | Asumu Takikawa                                                                    |
 | [Memory control][memory-control]                       | Deepti Gandluri & Ben Visness                                                     |
 | [Reference-Typed Strings][stringref]                   | Andy Wingo                                                                        |
 | [Profiles][profiles]                                   | Andreas Rossberg                                                                  |
-| [Rounding Variants][rounding-mode-control]             | Kloud Koder                                                                       |
 | [Shared-Everything Threads][shared-everything-threads] | Andrew Brown, Conrad Watt, and Thomas Lively                                      |
 | [Frozen Values][frozen-values]                         | Léo Andrès and Pierre Chambart                                                    |
-| [Compilation Hints][compilation-hints]                 | Emanuel Ziegler                                                                   |
-| [Custom Page Sizes][custom-page-sizes]                 | Nick Fitzgerald                                                                   |
 | [Half Precision][half-precision]                       | Ilya Rezvov                                                                       |
+| [Compact Import Section][compact-import-section]       | Ryan Hunt                                                                         |
+| [Custom RTTs and JS Interop][custom-rtts]              | Thomas Lively                                                                     |
 
 ### Phase 0 - Pre-Proposal (CG)
 
-| Proposal                                                    | Champion                         |
-| ----------------------------------------------------------- | -------------------------------- |
+Phase 0 proposals are tracked in the [design repository issue tracker].
+
+[design repository issue tracker]: https://github.com/WebAssembly/design/issues
 
 ## Implementation status
 
@@ -122,4 +126,7 @@ Please see [Contributing to WebAssembly](https://github.com/WebAssembly/design/b
 [frozen-values]: https://github.com/WebAssembly/frozen-values
 [compilation-hints]: https://github.com/WebAssembly/compilation-hints
 [custom-page-sizes]: https://github.com/WebAssembly/custom-page-sizes
+[custom-rtts]: https://github.com/WebAssembly/custom-rtts
 [half-precision]: https://github.com/WebAssembly/half-precision
+[compact-import-section]: https://github.com/WebAssembly/compact-import-section
+[wide-arithmetic]: https://github.com/WebAssembly/wide-arithmetic
